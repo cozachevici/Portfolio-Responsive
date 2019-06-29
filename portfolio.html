@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio About Me</title>
+
+    <!-- Bootstrap CSS order: 1-reset.css 2-bootstrap css 3-mycss -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<!--!Navigation Bar-->
+<body>
+
+<!--navbar is flexbox-->
+  <nav class="navbar navbar-expand navbar-light bg-light px-5 py-0">
+    <div class="container">  <!--put div inside navbar to align the content only-->
+
+      <a class="navbar-brand text-white m-0 p-4" style="background-color: #4aaaa5" href="index.html">
+        Felipe Cozachevici
+      </a>
+
+      <!-- Very often, especially on small screens, you want to hide the navigation links and replace them with a button that should reveal them when clicked on.
+
+      To create a collapsible navigation bar, use a button with class="navbar-toggler", data-toggle="collapse" and data-target="#thetarget". Then wrap the navbar content (links, etc) inside a div element with class="collapse navbar-collapse", followed by an id that matches the data-target of the button: "thetarget". -->
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!--Navbar is flexbox, set width to 100%, align text with justify content-->
+      <div class="collapse navbar-collapse" id="navbarSupportedConetnt">
+        <ul class="navbar-nav w-100 justify-content-end">
+          <li class="nav-item pr-2"> <!--padding right-->
+            <a class="nav-link py-0" href="index.html">About</a>
+          </li>
+          <li class="nav-item border-left px-2">
+            <a class="nav-link py-0 active" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item border-left pl-2">
+            <a class="nav-link py-0" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+<!--!Main Section-->
+ 
+
+  <section class="container">
+    <article class="row bg-light my-5">
+      <div class="col-sm-12 p-sm-4" id="gallery">
+        <h1 class="border-bottom pb-3">Portfolio</h1>
+
+        <div class="row py-4 text-white text-center">
+          <div class="col-4">
+            <img class="img-fluid" src="assets/images/cartman2.jpg" alt="Cartman">
+            <h3>Example 1</h3>
+          </div>
+
+          <div class="col-4"> <!--? .img-fluid applies mw-100 and auto height -->
+            <img class="img-fluid" src="assets/images/buttter.jpg" alt="buttter">
+            <h3>Example 2</h3>
+          </div>
+
+          <div class="col-4">
+            <img class="img-fluid" src="assets/images/Kyle.jpg" alt="Kyle">
+            <h3>Example 3</h3>
+          </div>
+        </div>
+
+        <div class="row py-4 text-white text-center">
+          <div class="col-4">
+            <img class="img-fluid" src="assets/images/stan.jpg" alt="stan">
+            <h3>Example 4</h3>
+            
+          </div>
+          <div class="col-4">
+            <img class="img-fluid" src="assets/images/kenny.png" alt="Kenny">
+            <h3>Example 5</h3>
+          </div>
+        </div>
+          
+      </div>
+    </article>
+  </section>
+
+<!--!Footer-->
+
+<footer class="footer" style="background-color: #666666" class="pt-4 text-white-50 w-100">
+    <div class="container">
+        <p class="text-center">Copyright &copy;</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
